@@ -24,6 +24,21 @@ body {
   background: var(--bg-color);
 }
 
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
 .app {
   background: var(--main-color);
   width: 90%;
@@ -37,7 +52,7 @@ body {
   font-weight: 25px;
   color: var(--text-color);
   font-weight: 600;
-  border-bottom: 1px solid var(--second-bg-color);
+  border-bottom: 1px solid var(--text-color);
   padding-bottom: 30px;
 }
 
@@ -47,7 +62,7 @@ body {
 
 .quiz h2 {
   font-size: 18px;
-  color: var(--second-bg-color);
+  color: var(--text-color);
   font-weight: 600;
 }
 
@@ -80,4 +95,13 @@ body {
   margin: 20px auto 0;
   border-radius: 4px;
   cursor: pointer;
+  display: none;
+}
+
+.btn:hover:not([disabled]) {
+  color: var(--main-color);
+}
+
+.btn:disable {
+  cursor: no-drop;
 }
