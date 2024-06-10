@@ -80,12 +80,12 @@ body {
   transition: all 0.3s;
 }
 
-.btn:hover{
+.btn:hover {
   background: var(--second-bg-color);
   color: var(--text-color);
 }
 
-#next-btn{
+#btnProx {
   background: var(--bg-color);
   color: var(--text-color);
   font-weight: 500;

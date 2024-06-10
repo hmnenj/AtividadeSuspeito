@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #262118;
+    --second-bg-color: #595248;
+    --text-color: #fff;
+    --main-color: #A51E1E;
+}
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: url('./img/ghostface.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 17vh;
+    gap: 20px;
+    color: var(--second-bg-color);
+}
+
+.content h1 {
+    color: var(--text-color);
+    font-size: 35px;
+}
+
+.content .box {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 900px;
+    max-width: 100%;
+}
+
+.content p {
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: justify;
+}
+
+.content button {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 50px;
+    width: 115px;
+    height: 55px;
+    transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+    background-color: var(--main-color);
+}
