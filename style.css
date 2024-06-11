@@ -1,107 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 :root {
-  --bg-color: #262118;
-  --second-bg-color: #595248;
-  --text-color: #fff;
-  --main-color: #A51E1E;
+    --bg-color: #262118;
+    --second-bg-color: #595248;
+    --text-color: #fff;
+    --main-color: #A51E1E;
 }
 
 * {
-  font-family: Poppins;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 body {
-  background: var(--bg-color);
+    background: url('./img/ghostface.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  background: var(--main-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-
-.app {
-  background: var(--main-color);
-  width: 90%;
-  max-width: 600px;
-  margin: 100px auto 0;
-  border-radius: 10px;
-  padding: 30px;
+a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
-.app h1 {
-  font-weight: 25px;
-  color: var(--text-color);
-  font-weight: 600;
-  border-bottom: 1px solid var(--text-color);
-  padding-bottom: 30px;
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 17vh;
+    gap: 20px;
+    color: var(--second-bg-color);
 }
 
-.quiz {
-  padding: 20px 0;
+.content h1 {
+    color: var(--text-color);
+    font-size: 35px;
 }
 
-.quiz h2 {
-  font-size: 18px;
-  color: var(--text-color);
-  font-weight: 600;
+.content .box {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 900px;
+    max-width: 100%;
 }
 
-.btn {
-  background: var(--main-color);
-  color: var(--text-color);
-  font-weight: 500;
-  width: 100%;
-  border: 1px solid var(--second-bg-color);
-  padding: 10px;
-  margin: 10px 0;
-  text-align: left;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
+.content p {
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: justify;
 }
 
-.btn:hover {
-  background: var(--second-bg-color);
-  color: var(--text-color);
+.content button {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 50px;
+    width: 115px;
+    height: 55px;
+    transition: background-color 0.3s ease;
 }
 
-#btnProx {
-  background: var(--bg-color);
-  color: var(--text-color);
-  font-weight: 500;
-  width: 150px;
-  border: 0;
-  padding: 10px;
-  margin: 20px auto 0;
-  border-radius: 4px;
-  cursor: pointer;
-  display: none;
-}
-
-.btn:hover:not([disabled]) {
-  color: var(--main-color);
-}
-
-.btn:disable {
-  cursor: no-drop;
+.content button:hover {
+    background-color: var(--main-color);
 }
