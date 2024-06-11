@@ -27,6 +27,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
 
 }
 
@@ -38,19 +39,6 @@ body {
     height: 100%;
     backdrop-filter: blur(10px);
     z-index: -1;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: var(--main-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
 }
 
 a {

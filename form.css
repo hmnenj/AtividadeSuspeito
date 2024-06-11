@@ -21,21 +21,28 @@
 }
 
 body {
-  background: var(--bg-color);
+  background: url('./img/ghostface.jpg') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-align: center;
 }
 
-
-.header {
+.blur-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 100px;
-  background: var(--main-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: -1;
 }
 
 
@@ -43,17 +50,20 @@ body {
   background: var(--main-color);
   width: 90%;
   max-width: 600px;
-  margin: 100px auto 0;
   border-radius: 10px;
   padding: 30px;
 }
 
 .app h1 {
-  font-weight: 25px;
+  font-weight: 35px;
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: 700;
   border-bottom: 1px solid var(--text-color);
   padding-bottom: 30px;
+}
+
+.app p {
+  color: var(--text-color);
 }
 
 .quiz {
@@ -99,9 +109,10 @@ body {
 }
 
 .btn:hover:not([disabled]) {
-  color: var(--main-color);
+  color: var(--text-color);
 }
 
 .btn:disable {
   cursor: no-drop;
 }
+
